@@ -56,7 +56,7 @@ article.featured {
   grid-column: 1 / 4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 60px;
   align-items: center;
   border-bottom: 1px solid #bbc7c7;
   padding-bottom: 40px;
@@ -70,5 +70,20 @@ article h3 {
 @media screen and (max-width: 980px) {
   article {
     grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  article,
+  article.featured {
+    display: block;
+    margin: 0 20px;
+  }
+  header {
+    margin: 0 20px;
   }
 }
